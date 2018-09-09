@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Money 2.0", "Money 2.0\Mone
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLib", "DataLib\DataLib.csproj", "{50F97037-33B4-43EF-9FDC-34CCAC1337E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLibTests", "DataLibTests\DataLibTests.csproj", "{3F9F0EC4-53B8-4304-BBA2-A77F4AD7D6F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,12 +17,16 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{900404C1-C94D-4FCC-9F3E-90070057D411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{900404C1-C94D-4FCC-9F3E-90070057D411}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{900404C1-C94D-4FCC-9F3E-90070057D411}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{900404C1-C94D-4FCC-9F3E-90070057D411}.Release|Any CPU.Build.0 = Release|Any CPU
+		{900404C1-C94D-4FCC-9F3E-90070057D411}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{900404C1-C94D-4FCC-9F3E-90070057D411}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{50F97037-33B4-43EF-9FDC-34CCAC1337E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{50F97037-33B4-43EF-9FDC-34CCAC1337E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{50F97037-33B4-43EF-9FDC-34CCAC1337E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{50F97037-33B4-43EF-9FDC-34CCAC1337E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50F97037-33B4-43EF-9FDC-34CCAC1337E5}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{50F97037-33B4-43EF-9FDC-34CCAC1337E5}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{3F9F0EC4-53B8-4304-BBA2-A77F4AD7D6F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F9F0EC4-53B8-4304-BBA2-A77F4AD7D6F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F9F0EC4-53B8-4304-BBA2-A77F4AD7D6F1}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F9F0EC4-53B8-4304-BBA2-A77F4AD7D6F1}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
