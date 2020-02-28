@@ -47,8 +47,8 @@
         <Button x:Name="AcceptButton" Content="Accept" HorizontalAlignment="Left" Margin="58,184,0,0" 
                 VerticalAlignment="Top" Width="73" 
                 Click="AcceptButton_Click" MaxWidth="73" MaxHeight="20"/>
-        <GroupBox Header="Errors" HorizontalAlignment="Left" Height="71" Margin="181,133,0,0" VerticalAlignment="Top" Width="167" FontFamily="Microsoft PhagsPa" FontSize="9" Foreground="#FFC92626" BorderThickness="2">
-            <TextBlock x:Name="ErrorBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="137"/>
+        <GroupBox Header="Errors" HorizontalAlignment="Left" Height="82" Margin="143,133,0,0" VerticalAlignment="Top" Width="205" FontFamily="Microsoft PhagsPa" FontSize="10" Foreground="#FFC92626" BorderThickness="2">
+            <TextBlock x:Name="ErrorBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="168"/>
         </GroupBox>
     </Grid>
 </Window>

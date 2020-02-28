@@ -22,70 +22,82 @@ namespace Money_2._0
     /// </summary>
     public partial class MainWindow : Window
     {
-        decimal d, r;
-        decimal user_r;
-        Funcs funcs = new Funcs();
+        decimal usd, rub;
+        decimal userRub;
 
         public MainWindow()
         {
+            
             InitializeComponent();
         }
 
         private void CountRubToUsdButton_Click(object sender, RoutedEventArgs e)
         {
+            Funcs funcs = new Funcs();
+
             try
             {
-                r = Variables.RUB = decimal.Parse(RubTextBox.Text);  
-                UsdAnswerTextBox.Text = (funcs.RubToUsd(r)).ToString();
+                rub = Variables.RUB = decimal.Parse(RubTextBox.Text);  
+                UsdAnswerTextBox.Text = (funcs.RubToUsd(rub)).ToString();
             }
             catch(FormatException fex)
             {
                 ErrorBlock.Text = fex.Message;
                 using (StreamWriter sw = new StreamWriter("logs.log", true))
                 {
-                    sw.Write("=========== Errors in CountRubToUsdButton_Click===========");
-                    sw.WriteLine();
                     sw.WriteLine(DateTime.Now + fex.Message + " ");
                 };
+            }
+            finally
+            {
+                funcs = null;
             }
         }
 
         private void CountUsdToRubButton_Click(object sender, RoutedEventArgs e)
         {
+            Funcs funcs = new Funcs();
+
             try
             {
-                d = Variables.USD = decimal.Parse(UsdTextBox.Text);
-                RubAnswerTextBox.Text = (funcs.UsdToRub(d)).ToString();
+                usd = Variables.USD = decimal.Parse(UsdTextBox.Text);
+                RubAnswerTextBox.Text = (funcs.UsdToRub(usd)).ToString();
             }
             catch(FormatException fex)
             {
                 ErrorBlock.Text = fex.Message;
                 using (StreamWriter sw = new StreamWriter("logs.log", true))
                 {
-                    sw.Write("=========== Errors in CountUsdToRubButton_Click===========");
-                    sw.WriteLine();
                     sw.WriteLine(DateTime.Now + fex.Message + " " + fex.Source);
                 };
+            }
+            finally
+            {
+                funcs = null;
             }
         }
 
         private void AcceptButton_Click(object sender, RoutedEventArgs e)
         {
+            Funcs funcs = new Funcs();
+
             try
             {
-                user_r = Variables.RUB = decimal.Parse(Course.Text);
-                d = decimal.Parse(UsdTextBox.Text);
-                RubAnswerTextBox.Text = (funcs.UserCourse(user_r, d)).ToString();
+                userRub = Variables.RUB = decimal.Parse(Course.Text);
+                usd = decimal.Parse(UsdTextBox.Text);
+                RubAnswerTextBox.Text = (funcs.UserCourse(userRub, usd)).ToString();
             }
             catch(FormatException fex)
             {
                 ErrorBlock.Text = fex.Message;
                 using (StreamWriter sw = new StreamWriter("logs.log", true))
                 {
-                    sw.Write("=========== Errors in AcceptButton_Click===========");
-                    sw.WriteLine();
                     sw.WriteLine(DateTime.Now + fex.Message + " " + fex.Source);
                 };
+            }
+            finally
+            {
+                funcs = null;
             }
         }
 

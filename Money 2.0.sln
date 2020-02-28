@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2042
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Money 2.0", "Money 2.0\Money 2.0.csproj", "{900404C1-C94D-4FCC-9F3E-90070057D411}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLib", "DataLib\DataLib.csproj", "{50F97037-33B4-43EF-9FDC-34CCAC1337E5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLibTests", "DataLibTests\DataLibTests.csproj", "{3F9F0EC4-53B8-4304-BBA2-A77F4AD7D6F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValuteParser", "ValutePareser\ValuteParser.csproj", "{F1BBCA1C-DD1D-4474-9B32-2D2618224231}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{3F9F0EC4-53B8-4304-BBA2-A77F4AD7D6F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F9F0EC4-53B8-4304-BBA2-A77F4AD7D6F1}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{3F9F0EC4-53B8-4304-BBA2-A77F4AD7D6F1}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{F1BBCA1C-DD1D-4474-9B32-2D2618224231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1BBCA1C-DD1D-4474-9B32-2D2618224231}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1BBCA1C-DD1D-4474-9B32-2D2618224231}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1BBCA1C-DD1D-4474-9B32-2D2618224231}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
