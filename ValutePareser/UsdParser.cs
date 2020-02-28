@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 
-namespace ValutePareser
+namespace ValuteParser
 {
     public class UsdParser
     {
@@ -50,7 +50,7 @@ namespace ValutePareser
             xmlDocument.LoadXml(GetUsdXml());
             XmlNode xmlNode = xmlDocument.SelectSingleNode("Valute/Value");
 
-            usdVal = Convert.ToDecimal(xmlNode);
+            usdVal = Convert.ToDecimal(xmlNode.InnerText);
             return usdVal;
         }
     }
