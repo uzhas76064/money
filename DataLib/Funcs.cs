@@ -24,7 +24,7 @@ namespace DataLib
 
             RUB = Parser.UsdXmlToDecimal();
             USD = d;
-            return checked(RUB * d);
+            return checked(Math.Round((RUB * d), 3));
         }
 
         public decimal UserCourse(decimal user_course, decimal d)
