@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MahApps.Metro.Controls;
 using DataLib;
 
 namespace Money_2._0
@@ -20,15 +21,15 @@ namespace Money_2._0
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : MetroWindow
     {
         decimal usd, rub;
         decimal userRub;
 
         public MainWindow()
         {
-            
             InitializeComponent();
+
         }
 
         private void CountRubToUsdButton_Click(object sender, RoutedEventArgs e)
