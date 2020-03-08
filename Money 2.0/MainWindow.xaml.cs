@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ValuteParser;
 using MahApps.Metro.Controls;
 using DataLib;
 
@@ -29,7 +30,8 @@ namespace Money_2._0
         public MainWindow()
         {
             InitializeComponent();
-
+            usdPriceMonitoring.Text = UsdParser.GetPrice(new UsdParser().UsdXmlToDecimal()).ToString();
+            usdPriceMonitoring.Foreground = Brushes.Red;
         }
 
         private void CountRubToUsdButton_Click(object sender, RoutedEventArgs e)
@@ -41,7 +43,7 @@ namespace Money_2._0
                 rub = Variables.RUB = decimal.Parse(RubTextBox.Text);  
                 UsdAnswerTextBox.Text = (funcs.RubToUsd(rub)).ToString();
             }
-            catch(FormatException fex)
+            catch (FormatException fex)
             {
                 ErrorBlock.Text = fex.Message;
                 using (StreamWriter sw = new StreamWriter("logs.log", true))

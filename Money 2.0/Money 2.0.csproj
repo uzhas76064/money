@@ -129,6 +129,10 @@
       <Project>{50f97037-33b4-43ef-9fdc-34ccac1337e5}</Project>
       <Name>DataLib</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ValutePareser\ValuteParser.csproj">
+      <Project>{f1bbca1c-dd1d-4474-9b32-2d2618224231}</Project>
+      <Name>ValuteParser</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6">

@@ -7,50 +7,52 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Money_2._0"
         mc:Ignorable="d"
-        Title="Money 2.0" Height="268.528" Width="377.758" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+        Title="Money 2.0" Height="313" Width="377.758" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
     <Grid Margin="0,0,4,0">
-        <TextBox x:Name="UsdTextBox" HorizontalAlignment="Left" Height="37" Margin="13,21,0,0" 
+        <TextBox x:Name="UsdTextBox" HorizontalAlignment="Left" Height="37" Margin="13,49,0,0" 
                  TextWrapping="Wrap" Text="Write USD here" VerticalAlignment="Top" Width="125" 
                  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" 
                  FontStyle="Italic" FontFamily="Yu Gothic UI" BorderThickness="2" RenderTransformOrigin="0.36,0.514" 
                  GotFocus="UsdTextBox_GotFocus" MaxWidth="125" MaxHeight="37" />
-        <TextBox x:Name="RubAnswerTextBox" HorizontalAlignment="Left" Height="37" Margin="223,21,0,0" 
+        <TextBox x:Name="RubAnswerTextBox" HorizontalAlignment="Left" Height="37" Margin="223,49,0,0" 
                  TextWrapping="Wrap" Text="Answer" 
                  VerticalAlignment="Top" Width="125" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" 
                  FontStyle="Italic" FontFamily="Yu Gothic UI" BorderThickness="2" 
                  GotFocus="RubAnswerTextBox_GotFocus" MaxWidth="125" MaxHeight="37"/>
-        <TextBox x:Name="RubTextBox" HorizontalAlignment="Left" Height="37" Margin="13,85,0,0" 
+        <TextBox x:Name="RubTextBox" HorizontalAlignment="Left" Height="37" Margin="13,109,0,0" 
                  TextWrapping="Wrap" Text="Write RUB here" 
                  VerticalAlignment="Top" Width="125" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" 
                  FontStyle="Italic" FontFamily="Yu Gothic UI" BorderThickness="2" 
                  GotFocus="RubTextBox_GotFocus" MaxWidth="125" MaxHeight="37" />
-        <TextBox x:Name="UsdAnswerTextBox" HorizontalAlignment="Left" Height="37" Margin="223,85,0,0" 
+        <TextBox x:Name="UsdAnswerTextBox" HorizontalAlignment="Left" Height="37" Margin="223,107,0,0" 
                  TextWrapping="Wrap" Text="Answer" 
                  VerticalAlignment="Top" Width="125" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" 
                  FontStyle="Italic" FontFamily="Yu Gothic UI" BorderThickness="2" 
                  GotFocus="UsdAnswerTextBox_GotFocus" MaxWidth="125" MaxHeight="37"/>
 
 
-        <Button x:Name="CountUsdToRubButton" Content="Count" HorizontalAlignment="Left" Margin="143,21,0,0" 
+        <Button x:Name="CountUsdToRubButton" Content="Count" HorizontalAlignment="Left" Margin="143,50,0,0" 
                 VerticalAlignment="Top" Width="75" Height="37" 
                 Click="CountUsdToRubButton_Click" MaxWidth="75" MaxHeight="37"/>
-        <Button x:Name="CountRubToUsdButton" Content="Count" HorizontalAlignment="Left" Margin="143,85,0,0" 
+        <Button x:Name="CountRubToUsdButton" Content="Count" HorizontalAlignment="Left" Margin="143,108,0,0" 
                 VerticalAlignment="Top" Width="75" Height="37" 
                 Click="CountRubToUsdButton_Click" MaxWidth="75" MaxHeight="37"/>
-        <TextBox x:Name="Course" HorizontalAlignment="Left" Height="28" Margin="48,147,0,0" 
+        <TextBox x:Name="Course" HorizontalAlignment="Left" Height="28" Margin="48,175,0,0" 
                  TextWrapping="Wrap" 
                  VerticalAlignment="Top" Width="90" BorderThickness="2" 
                  FontFamily="Yu Gothic UI" TextAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" 
                  MaxWidth="90" MaxHeight="28"/>
-        <CheckBox ToolTip="Your course" x:Name="CheckCourse" Content="" HorizontalAlignment="Left" Margin="26,154,0,0" 
+        <CheckBox ToolTip="Your course" x:Name="CheckCourse" Content="" HorizontalAlignment="Left" Margin="26,181,0,0" 
                  VerticalAlignment="Top" Width="17" Click="CheckCourse_Click" 
                  IsChecked="True" MaxWidth="17" MaxHeight="15" 
                  RenderTransformOrigin="0.608,0.844"/>
-        <Button x:Name="AcceptButton" Content="Accept" HorizontalAlignment="Left" Margin="58,184,0,0" 
+        <Button x:Name="AcceptButton" Content="Accept" HorizontalAlignment="Left" Margin="58,208,0,0" 
                 VerticalAlignment="Top" Width="73" 
                 Click="AcceptButton_Click" MaxWidth="73" MaxHeight="20"/>
-        <GroupBox Header="Errors" HorizontalAlignment="Left" Height="82" Margin="143,133,0,0" VerticalAlignment="Top" Width="205" FontFamily="Microsoft PhagsPa" FontSize="10" Foreground="#FFC92626" BorderThickness="2">
+        <GroupBox Header="Errors" HorizontalAlignment="Left" Height="82" Margin="143,167,0,0" VerticalAlignment="Top" Width="205" FontFamily="Microsoft PhagsPa" FontSize="10" Foreground="#FFC92626" BorderThickness="2">
             <TextBlock x:Name="ErrorBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="168"/>
         </GroupBox>
+        <TextBlock HorizontalAlignment="Left" Margin="13,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" FontFamily="Roboto"><Run Text="USD to RUB:"/></TextBlock>
+        <TextBlock x:Name="usdPriceMonitoring" HorizontalAlignment="Left" Margin="85,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" FontFamily="Roboto Thin"/>
     </Grid>
 </Controls:MetroWindow>

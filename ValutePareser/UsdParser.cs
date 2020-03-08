@@ -53,5 +53,10 @@ namespace ValuteParser
             usdVal = Convert.ToDecimal(xmlNode.InnerText);
             return usdVal;
         }
+
+        public static decimal GetPrice(decimal price)
+        {
+            return price;
+        }
     }
 }
